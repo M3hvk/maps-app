@@ -156,7 +156,7 @@ export default function MapScreen() {
         {destinationMarker && <Marker coordinate={destinationMarker} title="Destination" pinColor="red" />}
 
         {/* Draw Route */}
-        {routeCoords.length > 0 && <Polyline coordinates={routeCoords} strokeWidth={5} strokeColor="pink" />}
+        {routeCoords.length > 0 && <Polyline coordinates={routeCoords} strokeWidth={10} strokeColor="blue" />}
       </MapView>
 
      <TouchableOpacity style = {styles.button} onPress={fetchRoute} ><Text style = {{color: 'white'}}>fetch route</Text></TouchableOpacity>
